@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ApresentaFilmeActivity"
+    android:background="#e5e9f4">
+
+    <TextView
+        android:id="@+id/clickTituloFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duro de Atuar"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/clickImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/duro"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Categoria:"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/clickCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drama"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginLeft="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/clickDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin Hart - interpretando uma versão de si mesmo - está em uma missão que desafia a morte para se tornar uma estrela de ação.
+E com uma pequena ajuda de John Travolta, Nathalie Emmanuel e Josh Hartnett - ele pode conseguir."
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="1" />
+
+        <TextView
+            android:layout_marginTop="5sp"
+            android:id="@+id/mPontuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="50sp"
+            android:text="4.5"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite" />
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_share" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btnVoltar"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+
+
+</LinearLayout>
